@@ -1,0 +1,90 @@
+.container{
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 99999;
+    .sub-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        padding: 24px 47px;
+        h2{
+            font-size:31px;
+            font-weight:900;
+            color: rgba(9, 23, 95, 1);
+            font-family: Roboto;
+        }
+        .navlinks {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .an{
+                color: rgb(6, 16, 65);
+            }
+            a{
+                color: rgb(84, 102, 138);
+                font-weight: 500;
+                font-family: roboto;
+                font-size: 16px;
+            }
+        }
+        .nib{
+            display: flex;
+            gap: 20px;
+            .navicons {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .nBar{
+                display: none;
+            }
+        }
+    }
+}
+@media(max-width: 799px)  {
+    .container{
+        .sub-container{
+            padding: 16px 24px;
+            height: 80px;
+            .navlinks {
+                display: none;
+            }
+            .nib{
+                .nBar{
+                    display:block;
+                    background-color: rgba(43, 48, 58, 1);
+                    border-radius: 4px;
+                    padding: 8px;
+                    height: 48px;
+                    width: 48px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 599px)  {
+    .container{
+        .sub-container{
+            padding: 12px;
+            height: 72px;
+            .navlinks {
+                display: none;
+            }
+            .nib{
+                .navicons {
+                    display: none; 
+                 }
+                 .nBar{
+                     display:block;
+                     background-color: rgba(43, 48, 58, 1);
+                     border-radius: 4px;
+                     padding: 8px;
+                     height: 48px;
+                     width: 48px;
+                 }
+            }
+        }
+    }
+}

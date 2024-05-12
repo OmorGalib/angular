@@ -1,0 +1,79 @@
+.container{
+    .emela-container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 10px auto;
+        .e-head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0px;
+            position: relative;
+            hr{
+                width: 100%;
+                border: 1px solid #fcd804;
+            }
+            button{
+                position: absolute;
+                border: none;
+                border-radius: 30px;
+                background-color:#fcd804;
+                color: #121212;
+                padding: 10px 15px;
+                font-weight: 600;
+                font-size: 18px;
+                font-family: Rubik, sans-serif;
+                text-align: center;
+            }
+        }
+        .e-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px 0px;
+            border-bottom: 1px solid #ddd ;
+            h4{
+                color: #333e48;
+                font-family: Open Sans, sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 25px;
+            }
+            .e-n-goto, .e-n-btns{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+            .e-n-btns{
+                .btn-1, .btn-2{
+                    max-height: 30px;
+                    border: none;
+                    border-radius: 30px;
+                    color: #121212;
+                    padding: 5px 20px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-family: Rubik, sans-serif;
+                    text-align: center;
+                }
+                .btn-1{
+                    background-color:#fcd804;
+                }
+            }
+            .e-n-goto{
+                a{
+                    text-wrap: nowrap;
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-family: Rubik, sans-serif;
+                }
+                img{
+                    max-height: 12px;
+                    min-width: 12px;
+                }
+            }
+        }
+    }
+}

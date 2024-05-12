@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-img">
+        <img [src]="cardData?.image" alt="">
+        <div class="dis-count" *ngIf="cardData?.discount">
+            <h4>{{cardData?.discount}}</h4>
+        </div>
+    </div>
+    <div class="card-footer">
+        <p class="pType">{{cardData?.type}}</p>
+        <h3>{{cardData?.name}}</h3>
+        <div class="card-info">
+            <div class="leftInfo">
+                <div class="price">
+                    <p class="pNew">{{cardData?.nPrice}}</p>
+                    <p class="pOld">{{cardData?.oPrice}}</p>
+                </div>
+                <div class="ratings">
+                    <ng-container *ngFor="let i of [1,2,3,4,5]">
+                        <img  class="star-icon" [src]="cardData?.rating" alt="">
+                    </ng-container>
+                </div>
+            </div>
+            <button class="store-btn" (click)="onClickStore()">
+                <img [src]="cardData?.store" alt="">
+            </button>
+        </div>
+    </div>
+</div>

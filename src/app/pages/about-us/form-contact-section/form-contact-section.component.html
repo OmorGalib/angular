@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="f-C-container">
+    <div class="contact-info">
+      <img
+        class="bg-blue"
+        src="../../../../assets/images/brand/png/blu-qtr-circle.png"
+        alt=""
+      />
+      <img
+        class="bg-ash"
+        src="../../../../assets/images/brand/png/ash-circle.png"
+        alt=""
+      />
+      <div class="head-info">
+        <h4>Contact Information</h4>
+        <p>Say something to start a live chat!</p>
+      </div>
+      <div class="body-info">
+        <div class="i-t">
+          <img
+            src="../../../../assets/images/brand/png/phone-call.png"
+            alt=""
+          />
+          <p>+1012 3456 789</p>
+        </div>
+        <div class="i-t">
+          <img src="../../../../assets/images/brand/png/email.png" alt="" />
+          <p>demo@gmail.com</p>
+        </div>
+        <div class="i-t">
+          <img src="../../../../assets/images/brand/png/location.png" alt="" />
+          <p>132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
+        </div>
+      </div>
+      <div class="foo-info">
+        <img src="../../../../assets/images/brand/png/insta.png" alt="" />
+        <img src="../../../../assets/images/brand/png/twitter.png" alt="" />
+        <img src="../../../../assets/images/brand/png/discord.png" alt="" />
+      </div>
+    </div>
+    <form [formGroup]="formData" action="">
+      <div class="form-info">
+        <div class="f-l-name">
+          <div>
+            <p>First Name</p>
+            <input type="text" name="" id="" formControlName="fname" />
+          </div>
+          <div>
+            <p>Last Name</p>
+            <input type="text" name="" id="" formControlName="lname" />
+          </div>
+        </div>
+        <div class="email-number">
+          <div>
+            <p>Email</p>
+            <input type="text" name="" id="" formControlName="email" />
+          </div>
+          <div>
+            <p>Phone Number</p>
+            <input type="text" name="" id="" formControlName="phone" />
+          </div>
+        </div>
+        <div class="msg">
+          <p>Message</p>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Write your message"
+            formControlName="message"
+          />
+        </div>
+        <div class="select-check">
+          <p class="p-select">Select Subject?</p>
+          <div class="checkbox">
+            <div class="inp-lbl" *ngFor="let i of [1, 2, 3]">
+              <input
+                type="checkbox"
+                id="checkbox{{ i }}"
+                name="checkbox{{ i }}"
+                value="checkbox{{ i }}"
+                formControlName="subject"
+              />
+              <label for="checkbox{{ i }}">General Inquiry</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-btn" >
+          <button (click)="onSubmit()">Send Message</button> 
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

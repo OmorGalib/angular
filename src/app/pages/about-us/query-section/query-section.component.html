@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="query-container">
+    <h2>Frequently Ask Questions</h2>
+    <div class="quesAns">
+      <div *ngFor="let data of queries; let i = index">
+        <div class="question">
+          <p>{{ data?.question }}</p>
+          <button (click)="handleToggle(i)">
+            <img *ngIf="isDownArrowVisible[i]" [src]="data?.downarrow" alt="Down Arrow">
+            <img *ngIf="!isDownArrowVisible[i]" [src]="data?.uparrow" alt="Up Arrow">
+          </button>
+        </div>
+        <div class="answer">
+          <p *ngIf="isShow[i] == true">{{ data?.answer }}</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <button class="query-btn">Find More FAQs</button>
+  </div>
+</div>

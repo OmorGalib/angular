@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="sub-container">
+        <ng-container *ngFor="let p of places">
+            <div class="place">
+                <h5>{{p?.title}}</h5>
+                <p>{{p?.address}}</p>
+            </div>
+        </ng-container>
+    </div>
+</div>

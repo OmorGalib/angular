@@ -1,0 +1,101 @@
+.container{
+    background-color: #083248;
+}
+.bCards-container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.bCards-header{
+    width: 50%;
+    text-align: center;
+   h2{
+    color: #FFFFFF;
+    font-family: "Lato", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-wrap: wrap;
+   }
+}
+.bCards{
+    display: flex;
+    gap: 20px;
+    .bCard{
+        padding: 35px;
+        background-color: #FFFFFF;
+        height: 300px;
+        width: 100%;
+        .card-img{
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit:cover;
+            }
+        }
+        .card-footer{
+            text-align: center;
+            p{
+                color: rgb(27, 27, 27);
+                font-family: "Lato", Sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                text-wrap: wrap;
+            }
+        }
+    }
+}
+.bCards-btn{
+    button{
+        font-family: "Lato", Sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: #219EBC;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 4px;
+        text-align: center;
+        border: none;
+    }
+}
+
+
+
+@media (max-width: 899px){
+    .bCards-container{
+        padding: 20px;
+    }
+    .bCards-header{
+        width: 100%;
+    }
+    .bCards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 599px){
+    .bCards-container{
+        padding: 20px;
+    }
+    .bCards-header{
+        width: 100%;
+    }
+    .bCards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+}

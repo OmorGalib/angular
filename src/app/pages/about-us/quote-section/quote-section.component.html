@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="quote-container">
+        <h2>Das sagen unsere Kunden</h2>
+        <div class="quote-cards">
+            <div *ngFor="let q of quotetions">
+                <div class="quote-card">
+                    <div class="card-img">
+                        <img [src]="q?.image" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p>{{q?.description}}</p>
+                        <h3>{{q?.name}}</h3>
+                        <h4>{{q?.title}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

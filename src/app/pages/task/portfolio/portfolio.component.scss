@@ -1,0 +1,204 @@
+.portfolio-container{
+    width: 100%;
+    background-color: rgb(117, 78, 249);
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.bg-text{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 50px auto;
+    p{
+        font-family: roboto;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+.white-container{
+    background-color: white;
+    width: 70%;
+    height: 700px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+// work section start
+.work-section{
+    display: grid;
+    grid-template-rows: 5fr 3fr;
+}
+.header-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    .header{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        h1, .work{
+            font-size: 100px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: black;
+        }
+        .work{
+            box-shadow: 1px 5px 15px rgb(155, 146, 146);
+            color: rgb(117, 78, 249);
+        }
+    }
+    p{
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+    }
+}
+// intro section start
+.intro-section{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    height: fit-content;
+    margin: 40px auto;
+    .intro{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        img{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            box-shadow: 0px 0px 10px 5px rgb(252, 244, 244);
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            text-transform: uppercase;
+        }
+    }
+}
+// intro section end
+// work section end
+// follow start
+.follow-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    .follow{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        transform: rotate(90deg);
+        .follow-txt{
+            p{
+                text-transform: uppercase;
+                text-wrap: nowrap;
+                color: rgb(117, 78, 249);
+                font-family: roboto;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        hr{
+            width: 30px;
+            background-color: rgb(117, 78, 249);
+        }
+        .follow-icon{
+            display: flex;
+            gap: 20px;
+            img{
+                width: 12px;
+                height: 20px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+// folllow end
+
+// navbar start
+.nav-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav{
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    h2{
+        font-family: roboto;
+        font-size: 34px;
+        font-weight: 700;
+        color: white;
+    }
+    .alink-btn{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        a{
+            font-family: roboto;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        button{
+            text-align: center;
+            padding: 15px 40px;
+            font-family: roboto;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            background-color: rgb(117, 78, 249);
+            color: white;
+            border: none;
+            border-radius: 30px;
+        }
+    }
+}
+// navbar end
+//profile start
+.profile-container{
+    position: absolute;
+    top: 150px;
+    margin-left: 50px;
+    width: 100%;
+}
+.profile{ 
+    border-radius: 100%;
+    border: 15px solid rgb(117, 78, 249);
+    padding: 60px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    .img-container{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        border: 15px solid rgb(117, 78, 249);
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            object-fit:cover;
+        }
+    }
+}
+//profile end
+
+
+
+
+// gfasggagagfsfgsadgagagag
+// gasgasdgsagasg
+// sa
+// gasrgasgagagag

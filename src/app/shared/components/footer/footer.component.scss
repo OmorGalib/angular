@@ -1,0 +1,103 @@
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 80px;
+    margin: 20px 45px;
+    padding: 50px 70px 0px;
+    .foo-info{
+        display: grid;
+        grid-template-columns: 1.5fr 4fr 1.5fr;
+        justify-content: center;
+        gap: 20px;
+        .news-col .mail{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .mid-col{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-content: center;
+            gap: 10px;
+        }
+        .news-col, .serv-col, .about-col, .help-col, .cont-col{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
+    .copy-info{
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        width: 85%;
+        .T_n_P{
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+        }
+    }
+    h5{
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 23px;
+    }
+    h6{
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    p{
+        font-family: roboto;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    h5, h6,p{
+        color: rgba(43, 48, 58, 1);
+    }
+}
+@media (max-width: 799px) {
+    .sub-container{
+        row-gap: 50px;
+        padding: 30px 50px 0px;
+        .foo-info{
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            width: 100%;
+        }
+        .copy-info{
+            width: 100%;
+            .T_n_P{
+                gap: 10px;
+                p{
+                    text-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 599px) {
+    .sub-container{
+        margin: 20px 20px;
+        padding: 0px;
+        .foo-info{
+            grid-template-columns: 1fr;
+            gap: 30px;
+            .mid-col{
+                grid-template-columns: repeat(2,1fr);
+                gap: 30px;
+            }
+        }
+        .copy-info{
+            grid-template-columns: 1fr;
+            text-align: center;
+            width: 100%;
+            row-gap: 10px;
+            .T_n_P{
+                justify-content: center;
+            }
+        }
+    }
+}

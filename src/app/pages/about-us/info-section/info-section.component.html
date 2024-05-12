@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="info-container">
+        <h2>Warum sich Unternehmen für BOTfriends entscheiden</h2>
+        <div class="info-cards">
+            <ng-container *ngFor="let info of informations | slice: 0:3">
+                <div class="info-card">
+                    <button class="img-btn">
+                        <img [src]="info?.image" alt="">
+                    </button>
+                    <h4>{{info?.title}}</h4>
+                    <p>{{info?.description}}</p>
+                    <div class="info-btn">
+                        <button>Systeme integrieren</button>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <div class="info-card">
+            <button class="img-btn">
+                <img [src]="informations[3]?.image" alt="">
+            </button>
+            <h4>{{informations[3]?.title}}</h4>
+            <p>{{informations[3]?.description}}</p>
+            <div class="info-btn">
+                <button>Systeme integrieren</button>
+            </div>
+        </div>
+    </div>
+</div>

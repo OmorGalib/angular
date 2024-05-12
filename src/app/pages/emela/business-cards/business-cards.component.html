@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="bCards-container">
+        <div class="bCards-header">
+            <h2>WE OFFER BUSINESS SOLUTIONS THAT ENSURE YOUR SUCCESS</h2>
+        </div>
+        <!-- bCards-header end-->
+        <div class="bCards">
+            <div class="bCard" *ngFor="let item of cardsData">
+                <div class="card-img">
+                    <img [src]="item?.image" alt="">
+                </div>
+                <div class="card-footer">
+                    <p>{{item?.name}}</p>
+                </div>
+            </div>
+        </div> 
+        <!-- bCards end-->
+        <div class="bCards-btn">
+            <button>START YOUR WEBSITE</button>
+        </div>
+        <!-- bCards-btn end-->
+    </div>
+    <!-- bCards-container end -->
+</div>

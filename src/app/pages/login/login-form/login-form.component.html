@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="form-container">
+    <form [formGroup]="formData" action="">
+      <div class="form-head">
+        <h1>Login/register</h1>
+      </div>
+      <div class="f-l-name">
+        <div>
+          <p>First Name</p>
+          <input type="text" name="" id="" formControlName="fname" />
+        </div>
+        <div>
+          <p>Last Name</p>
+          <input type="text" name="" id="" placeholder="Doe" formControlName="lname" />
+        </div>
+      </div>
+      <div class="email-pass">
+        <div>
+          <p>Email</p>
+          <input type="text" name="" id="" formControlName="email" />
+        </div>
+        <div>
+          <p>Password</p>
+          <input type="password" name="" id="" placeholder="*********" formControlName="password" />
+        </div>
+      </div>
+      <div class="form-btn">
+        <button (click)="onSubmit()">Send Message</button>
+      </div>
+    </form>
+  </div>
+</div>
