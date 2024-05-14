@@ -36,19 +36,55 @@
     align-items: center;
     gap: 40px;
     padding: 30px;
+    position: relative;
     .header{
         display: flex;
         gap: 20px;
         align-items: center;
-        h1, .work{
+        h1{
             font-size: 100px;
             font-weight: 700;
             text-transform: uppercase;
             color: black;
         }
-        .work{
-            box-shadow: 1px 5px 15px rgb(155, 146, 146);
-            color: rgb(117, 78, 249);
+        .work {
+            display: flex;
+        }
+        
+        .font {
+            font-size: 100px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color:  rgb(117, 78, 249);
+        }
+        
+        .o{
+            position: relative;
+        }
+        
+        .left-line {
+            position: absolute;
+            top: 10%;
+            left: -90px;
+            width: 140px;
+            height: 15px;
+            background: white;
+            box-shadow: 0px 3px 4px rgb(198, 197, 204);
+        }
+        
+        .right-line {
+            position: absolute;
+            top: 10%;
+            right: -135px;
+            width: 140px;
+            height: 15px;
+            background: white;
+            // z-index: 0;
+            box-shadow: 0px 3px 4px  rgb(198, 197, 204);
+        }
+        
+        .w, .r, .k {
+            z-index: 100;
         }
     }
     p{
