@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './materials/materials.module';
 import { SwiperModule } from 'swiper/angular';
 import { DigitOnlyModule } from '@uiowa/digit-only';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DigitOnlyModule } from '@uiowa/digit-only';
     BrowserAnimationsModule,
     MaterialModule,
     SwiperModule,
-    DigitOnlyModule
+    DigitOnlyModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
